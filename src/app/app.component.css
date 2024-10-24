@@ -1,0 +1,116 @@
+/* Container principal pour centrer et limiter la largeur */
+
+.container {
+    background-color: white; /* Fond blanc pour le contenu */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f6f9; /* Arrière-plan subtil */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre pour effet de profondeur */
+  }
+  
+  /* Titres des sections */
+  h2 {
+    color: #007bff;
+    margin-top: 30px;
+    font-size: 2rem;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif; /* Police moderne */
+  }
+  
+  /* Sections pour espacement */
+  #cv, #competences, #projets, #contact {
+    margin-bottom: 50px;
+  }
+  
+  /* Listes sans puces, avec padding */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border-left: 4px solid #007bff; /* Bordure gauche colorée pour accent */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Changement de couleur au survol des items de la liste */
+  ul li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Style pour chaque projet */
+  .project {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  /* Effet de survol pour donner de la profondeur aux projets */
+  .project:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Liens avec effet de survol */
+  a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  /* Changement de couleur du lien au survol */
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Style pour iframe (PDF viewer ou autre contenu intégré) */
+  iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Section contact avec meilleure mise en page */
+  #contact p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  /* Petites animations de transition pour les hover */
+  ul li, .project, a {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Responsive design pour petits écrans */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    ul li, .project {
+      padding: 12px;
+    }
+    
+  }
+  
